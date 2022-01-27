@@ -1,0 +1,5 @@
+/home/stephen/github-files/ECE_0302_projects/project1/p1_starter_code/p1_starter_code/CMakeFiles/rebuild_cache.dir
+/home/stephen/github-files/ECE_0302_projects/project1/p1_starter_code/p1_starter_code/CMakeFiles/edit_cache.dir
+/home/stephen/github-files/ECE_0302_projects/project1/p1_starter_code/p1_starter_code/CMakeFiles/test.dir
+/home/stephen/github-files/ECE_0302_projects/project1/p1_starter_code/p1_starter_code/CMakeFiles/submission.dir
+/home/stephen/github-files/ECE_0302_projects/project1/p1_starter_code/p1_starter_code/CMakeFiles/bitset-tests.dir
