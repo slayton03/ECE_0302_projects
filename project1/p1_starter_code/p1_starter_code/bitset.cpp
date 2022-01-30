@@ -39,11 +39,18 @@ Bitset::Bitset(const std::string & value){
 
   isValid=true;
   
-  //Ask about how to read string and how this one works
-  
   arraySize=value.length();
   
   for(int i;i<arraySize;i++){
+  
+    if(value[i]=='0' || value[i]=='1'){
+      
+    }
+    else{
+      bitarray=0;
+      isValid=false;
+      return;
+    }
     
   }
   
@@ -117,12 +124,14 @@ bool Bitset::test(intmax_t index){
 }
 
 std::string Bitset::asString() const{
-
-  //Ask TA
   
   string stringx;
   
-  stringx+=to_string(bitarray[i])
+  for(int i=0;i<arraySize;i++){
+  
+      stringx+=to_string(bitarray[i])
+      
+  }
 
 }
 
