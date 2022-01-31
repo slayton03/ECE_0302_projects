@@ -41,7 +41,7 @@ Bitset::Bitset(const std::string & value){
   
   arraySize=value.length();
   
-  for(int i;i<arraySize;i++){
+  for(int i=0;i<arraySize;i++){
   
     if(value[i]=='0' || value[i]=='1'){
       
@@ -54,13 +54,21 @@ Bitset::Bitset(const std::string & value){
     
   }
   
+  
   bitarray = new intmax_t[arraySize];
   
-  for(int i;i<arraySize;i++){
+  for(int i=0;i<arraySize;i++){
     
-    bitarray[i]=value[i]-'0';
+    if(value[i]=='0'){
+      bitarray[i]=0;
+    }
+    else if(value[i]=='1'){
+      bitarray[i]=1;
+    }
     
   }
+  
+  isValid=true;
   
 }
 
@@ -125,13 +133,15 @@ bool Bitset::test(intmax_t index){
 
 std::string Bitset::asString() const{
   
-  string stringx;
+  std::string stringx;
   
   for(int i=0;i<arraySize;i++){
   
-      stringx+=to_string(bitarray[i])
+      stringx+=std::to_string(bitarray[i]);
       
   }
+  
+  return stringx;
 
 }
 
